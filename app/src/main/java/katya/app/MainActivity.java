@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         webView.loadUrl("https://www.tinkoff.ru/sl/4aXAY67ZMeE/");
 
         WebViewClient webViewClient = new WebViewClient() {
-            @SuppressWarnings("deprecation") @Override
+            @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
                 return true;
